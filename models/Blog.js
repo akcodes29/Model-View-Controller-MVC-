@@ -13,12 +13,12 @@ Blog.init(
     },
     name: {
       type: DataTypes.STRING,
-      allowNull: false,
+      // allowNull: false,
     }, 
     title: {
         type: DataTypes.STRING,
       },
-    comment: {
+    post: {
       type: DataTypes.STRING,
     },
     date_created: {
