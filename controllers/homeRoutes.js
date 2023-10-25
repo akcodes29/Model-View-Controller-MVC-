@@ -2,6 +2,15 @@ const router = require('express').Router();
 const { Blog, User } = require('../models');
 const withAuth = require('../utils/auth');
 
+//Renders the homepage
+router.get('/', async (req, res) => {
+  try {
+    res.render('homepage');
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 router.get('/', async (req, res) => {
   try {
     // Get all blogs and JOIN with user data

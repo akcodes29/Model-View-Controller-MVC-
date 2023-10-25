@@ -19,3 +19,11 @@ if (process.env.JAWSDB_URL) {
 }
 
 module.exports = sequelize;
+
+// const Sequelize = require('sequelize');
+
+// const URI = process.env.MYSQLURI
+
+// const sequelize = new Sequelize(URI);
+
+// module.exports = sequelize;
